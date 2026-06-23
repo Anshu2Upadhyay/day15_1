@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change Personal Details</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:20px;
+    font-size:12px;
+}
+
+.container{
+    width:1100px;
+    margin:auto;
+    background:white;
+}
+
+h2{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.section-title{
+    background:#b7c9e3;
+    color:#000;
+    padding:5px;
+    font-weight:bold;
+    margin-top:8px;
+}
+
+.row{
+    display:flex;
+    gap:15px;
+    margin:5px 0;
+}
+
+.field{
+    display:flex;
+    align-items:center;
+}
+
+.field label{
+    width:120px;
+}
+
+input,select{
+    height:22px;
+    border:1px solid #999;
+    padding:2px 4px;
+}
+
+.small{ width:120px; }
+.medium{ width:190px; }
+.large{ width:320px; }
+
+textarea{
+    width:100%;
+    height:120px;
+    border:1px solid #999;
+}
+
+.bottom{
+    text-align:right;
+    margin-top:10px;
+}
+
+button{
+    background:#4d79b8;
+    color:white;
+    border:none;
+    padding:4px 12px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Change Personal Details</h2>
+
+<div class="row">
+    <div class="field">
+        <label>Initiator</label>
+        <input class="medium" value="Susan Thatcher">
+    </div>
+
+    <div class="field">
+        <label>Form ID</label>
+        <input class="small" value="1000002880">
+    </div>
+
+    <div class="field">
+        <label>Request Date</label>
+        <input class="small" value="14 Mar 2016">
+    </div>
+</div>
+
+<div class="section-title">
+    Organisational Information
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>Organisation ID</label>
+        <input class="medium" value="50020339">
+    </div>
+
+    <div class="field">
+        <label>Organisation Name</label>
+        <input class="large" value="United Kingdom Subsidiary">
+    </div>
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>Org Abbreviation</label>
+        <input class="medium" value="ICOUK">
+    </div>
+</div>
+
+<div class="section-title">
+    Position Information
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>Job</label>
+        <input class="medium" value="Manager">
+    </div>
+
+    <div class="field">
+        <label>Position ID</label>
+        <input class="medium" value="50004925">
+    </div>
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>Position Name</label>
+        <input class="large"
+        value="Direction of Finance - United Kingdom">
+    </div>
+</div>
+
+<div class="section-title">
+    Employee Information
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>Personnel Area</label>
+        <input class="large" value="Corporate - United Kingdom">
+    </div>
+
+    <div class="field">
+        <label>Personnel Sub Area</label>
+        <input class="medium" value="HQ">
+    </div>
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>Employee Group</label>
+        <input class="medium" value="Active">
+    </div>
+
+    <div class="field">
+        <label>Employee Sub Grp</label>
+        <input class="medium" value="Salaried">
+    </div>
+</div>
+
+<div class="section-title">
+    Requesting Manager Section
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>Effective Date</label>
+        <input type="date">
+    </div>
+
+    <div class="field">
+        <label>Action Reason</label>
+        <select class="medium">
+            <option>Select</option>
+        </select>
+    </div>
+</div>
+
+<div class="section-title">
+    Employee Personal Details
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>Title</label>
+        <select>
+            <option>Mr.</option>
+        </select>
+    </div>
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>First Name</label>
+        <input class="medium" value="Charles">
+    </div>
+
+    <div class="field">
+        <label>Middle Name</label>
+        <input class="medium">
+    </div>
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>Last Name</label>
+        <input class="medium" value="Aaron">
+    </div>
+
+    <div class="field">
+        <label>Initials</label>
+        <input class="small">
+    </div>
+</div>
+
+<div class="row">
+    <div class="field">
+        <label>Gender</label>
+        <select>
+            <option>Male</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <label>Date of Birth</label>
+        <input class="small" value="23 Feb 1950">
+    </div>
+</div>
+
+<div class="section-title">
+    Comments
+</div>
+
+<textarea></textarea>
+
+<div class="bottom">
+    <button>Add Comments</button>
+    <button>Send</button>
+</div>
+
+</div>
+
+</body>
+</html>

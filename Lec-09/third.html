@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Examples</title>
+</head>
+<body>
+    <script>
+
+        // Array of numbers
+        let nums = [10, 20, 30];
+
+        // Simple for loop
+        // Used when we need index (i)
+        for (let i = 0; i < nums.length; i++) {
+            console.log(nums[i]);
+        }
+
+        // Array of fruits
+        let fruits = ["apple", "pineapple", "mango", "strawberry"];
+
+        // for...of loop
+        // Directly accesses each element of the array
+        for (const f of fruits) {
+            console.log(f);
+        }
+
+        // forEach loop using normal function
+        // Executes the function for every element
+        fruits.forEach(function (f) {
+            console.log(f);
+        });
+
+        // forEach loop using arrow function
+        // Modern and shorter syntax
+        fruits.forEach((f) => {
+            console.log(f);
+        });
+
+        // Another way to write forEach with arrow function
+        fruits.forEach((f) => {
+            console.log(f);
+        });
+
+    </script>
+</body>
+</html>

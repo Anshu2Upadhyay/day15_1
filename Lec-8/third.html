@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum (){
+            let a = document.getElementById("num1");
+            let b = document.getElementById("num2");
+            
+            let c = parseInt(a.value) + parseInt(b.value);
+            document.getElementById("result").value=c;
+            a.value="";
+            b.value="";
+        }
+    </script>
+    <script>
+        function greater(){
+            let a = document.getElementById("num1");
+            let b = document.getElementById("num2")
+            if (parseInt(a.value) > parseInt(b.value)) {
+        document.getElementById("result").value = a.value;
+    }
+    else if (parseInt(b.value) > parseInt(a.value)) {
+        document.getElementById("result").value = b.value;
+    }
+    else {
+        document.getElementById("result").value = "Both Equal";
+    }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Addition</h1>
+    <input type="text" id="num1" placeholder="enter first number">
+    <input type="text" id="num2" placeholder="enter Second number">
+    <input type="text" id="result">
+    
+    <button onclick="sum()">Get Answer</button>
+</body>
+</html>

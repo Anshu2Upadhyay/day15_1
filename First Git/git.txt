@@ -1,0 +1,18 @@
+git init
+git status
+
+git config user.name "Anshu2Upadhyay"
+git config user.email "imanshuupadhyay@gmail.com"
+
+git remote add origin https://github.com/Anshu2Upadhyay/Day11a.git
+
+// check krne ke liye
+
+git config --list
+// check ki repstry acces ho rha h ya nhi
+git remote -v
+
+git add .
+git status
+git commit -m ""
+git push

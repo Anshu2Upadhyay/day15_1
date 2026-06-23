@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function show() {
+            let a = parseInt(document.getElementById("a").value);
+            let b = parseInt(document.getElementById("b").value);
+            let res = "";
+            if (a < b) {
+                while (a <= b) {
+                    res = res + a + "<br>";
+                    a++;
+                }
+            }
+            else {
+                while (a >= b) {
+                    res = res + a + "<br>";
+                    a--;
+                }
+            }
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+
+<body>
+        <h1>Print Number</h1>
+        <input type="text" id="a" placeholder="Enter First Number">
+        <input type="text" id="b" placeholder="Enter Second Number">
+        <button onclick="show()"> show</button>
+        <div id="result"></div>
+</body>
+
+</html>

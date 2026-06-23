@@ -1,0 +1,21 @@
+.container{
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 200px 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr  1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+.box{
+    border: 2px solid red;
+    font-size: 2em;
+}
+.four{
+    background-color: aquamarine;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
