@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Anshu2Upadhyay/day15_1#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongosh": "^2.8.3"
   }
 }
